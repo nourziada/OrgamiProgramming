@@ -1,0 +1,105 @@
+.news-image
+{
+    height: 225px !important;
+    width: 100%;
+}
+
+.product-image
+{
+    height: 55px !important;
+    width: 55px !important;
+}
+
+.xs-menus .nav-menu > li.active a
+{
+    color: #e280a2 !important;
+}
+
+.pagination li a
+{
+    padding: 10px 17px !important;
+}
+
+.pagination li:last-child
+{
+    margin: 0 10px 0 0 !important;
+}
+
+.pagination li span
+{
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    border: 1px solid #eaeaea;
+    color: #222222;
+    padding: 0;
+    border-radius: 100%;
+    text-align: center;
+    padding: 10px 17px !important;
+    background-color: #e280a2 !important;
+    border-color: #e280a2 !important;
+    color: #fff !important;
+
+}
+
+.xs-breadcumb .breadcrumb-item.active
+{
+    margin-right: -25px !important;
+}
+
+#color-store {
+    color: #dc3545;
+    font-weight: 900;
+}
+
+@media (min-width: 991px)
+{
+    #main-logo-ld
+    {
+        max-width: 10.666667% !important;
+    }
+    #main-menu-lg
+    {
+        max-width: 81% !important;
+        flex: 0 0 82% !important;
+        text-align: center !important;
+    }
+    .xs-menus .nav-menu > li > a
+    {
+        font-size: 17px;
+    }
+    .xs-menus .nav-menu > li:last-child
+    {
+        margin-right: 5px;
+    }
+}
+
+.xs-menus .nav-menu > li > a
+{
+    font-size: 17px;
+}
+
+.training-dt-user .desc-user
+{
+    font-size: 16px;
+}
+
+.auction-slider .slick-prev, .auction-slider  .slick-next {
+    background: transparent !important;
+    border: none;
+    padding: 50px 14px;
+    position: absolute;
+    font-size: 25px;
+    top: calc(50% - 75px);
+    z-index: 99;
+    color: #fb8a79 !important;
+    cursor: pointer;
+}
+.auction-slider .slick-prev {
+    left: -40px !important;
+}
+.auction-slider .slick-next {
+    right: -40px !important;
+}

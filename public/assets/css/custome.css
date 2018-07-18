@@ -1,0 +1,300 @@
+@font-face {
+    font-family: 'cocon';
+    src: url('../fonts/CoconNextArabicLight.eot');
+    src: url('../fonts/CoconNextArabicLight.eot') format('embedded-opentype'),
+         url('../fonts/CoconNextArabicLight.woff2') format('woff2'),
+         url('../fonts/CoconNextArabicLight.woff') format('woff'),
+         url('../fonts/CoconNextArabicLight.ttf') format('truetype'),
+         url('../fonts/CoconNextArabicLight.svg#CoconNextArabicLight') format('svg');
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	-moz-transition: all ease-in-out 0.2s;
+	-ms-transition: all ease-in-out 0.2s;
+	-webkit-transition: all ease-in-out 0.2s;
+    transition: all ease-in-out 0.2s;
+    font-family: cocon;
+}
+.ltr{direction: ltr;}
+.xs-top-bar-info.right-content{
+    text-align: left;
+}
+.xs-content-header .xs-content-title{
+    float: right;
+}
+.xs-content-header.version-2 .xs-simple-btn {
+    float: left;
+}
+.xs-newsletter{
+    direction: ltr;
+}
+.xs-logo-wraper{
+    padding: 12px 0 0;
+}
+.xs-header{
+    padding-bottom: 0px;
+}
+.xs-newsLetter-section.v-yellow .newsletter-content i{
+    margin-left: 18px;
+    margin-right: 0;
+}
+.xs-tab-nav .nav-item{
+    margin-left: 35px;
+    margin-right: 0;
+}
+.xs-miniCart-menu.show{
+    right: -66px;
+}
+.xs-copyright .xs-social-list {
+    text-align: left;
+}
+.xs-serachForm input:not([type="submit"]){
+    float: right;
+}
+.xs-blog-post-comment .comment-meta b, .xs-blog-post-comment .comment-meta .comment-metadata {
+    padding-right: 21px;
+}
+.xs-blog-post-comment .comment-meta .comment-metadata {
+    margin-right: 90px;
+}
+.xs-blog-post-comment .comment-content{
+    padding-right: 110px;
+}
+.xs-post-entry-title {
+    font-size: 1.4em;
+}
+
+.xs-section-padding {
+    padding: 0;
+    padding-bottom:50px;
+}
+.padding-50px-bottom{
+    padding-bottom: 50px;
+}
+.padding-50px{
+    padding:50px 0 ;
+}
+
+.xs-content-header .xs-content-title{
+    float: unset;
+    text-align: center;
+}
+.xs-menus .nav-menu > li > a{
+    padding: 40px 8px;
+    font-size: 15px;
+}
+.bg-videos{
+    background: #ffc4ba;
+}
+.post-meta i{
+    padding-left: 8px;
+    padding-right: 0px;
+}
+.page-item.active .page-link{
+    background-color: #ffd19a;
+    border-color: #ea9e42;
+}
+.xs-post-entry-title{
+    color:#f8877b
+}
+.product-title a{
+    font-size:19px;
+}
+.custom-cart{
+    width: 100%;
+    padding: 15px;
+}
+
+
+.custom-cart .btn-cancel {
+    background-color: transparent;
+    color: #dc3545;
+    border-color: transparent;
+    padding: 0;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.custom-cart .img-product{    float: right;}
+.custom-cart .title-product{
+    height: 50px;
+    display: block;
+    float: right;
+}
+.custom-cart .form-control{
+    width: 100px;
+}
+.cart_totals_area.gray-bg{
+    padding: 15px;
+    background: #f8f8f8;
+}
+.cart_totals_area {
+    background-color: #F8F8F8;
+    color: #000000;
+}
+.cart_totals_area li {
+    overflow: hidden;
+    padding-bottom: 14px;
+}
+.cart_totals_area li span {
+    float: left;
+}
+.cart_page input {
+    width: 100%;
+    border: 1px solid #F1F1F1;
+    height: 52px;
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+.cart_totals_area strong{
+    font-weight: bold;
+}
+
+.profile .xs-content-title{
+padding-bottom: 15px;
+color:#dc3545;
+}
+ul.traning-list{
+    padding: 0 5px;
+}
+ul.traning-list li{
+    padding: 3px 15px;
+    margin: 0 0 10px 0;
+    background: #ffd19a;
+    border-radius:10px 0px 10px 0;
+}
+ul.traning-list li:hover , ul.traning-list li:nth-child(2n):hover{
+    background: #dc3545;
+    transition: ease-in-out 0.3s ;
+    border-radius:0px 10px 0px 10px;
+}
+ul.traning-list li:nth-child(2n){
+    background: #ffb5aa;
+}
+ul.traning-list li a{
+    color: #fff;
+    display: block;
+    overflow:auto;
+}
+ul.traning-list li .name-user{
+float: right;
+padding-top: 3px;
+padding-right: 5px;
+}
+ul.traning-list li .img-user{
+    float: right;
+}
+.training-dt-user{
+    box-shadow: #eaeaea 0px 2px 20px 0px;
+    margin: 15px;
+    margin-bottom: 25px;
+    text-align: center;
+    padding: 15px;
+    border-radius: 0 10px 0 10px;
+}
+.training-dt-user:hover{
+    transform: scale(1.1)
+}
+.training-dt-user.training-dt-user-dt{
+    margin-top:15px;
+    text-align:right; 
+}
+.training-dt-user .img-user{
+}
+.training-dt-user .img-user img{
+    background: #ffd19a;
+    padding: 5px;
+    border-radius: 50%;
+}
+.users-training:nth-child(2n) .training-dt-user .img-user img{
+    background: #ffcac2;
+}
+.training-dt-user .user-name a{
+    font-size: 19px;
+    color: #fd8c76;
+}
+.training-dt-user .desc-user{
+    font-size: 12px;
+    padding: 5px 15px;
+    color: #9a9a9a;
+}
+.title-custom-right{
+    font-size:18px;
+    padding-bottom: 15px;
+}
+.xs-blog-post-details .post-video{
+    background: rgba(248, 135, 123, 0.7);
+    padding: 15px;
+    border-radius: 50%;
+    width: 50px;
+    color: #fff;
+}
+.xs-blog-post-details .post-video a{
+    color:#fff;
+}
+#color-store{
+    color:#dc3545;
+}
+@media (max-width: 991px)
+{
+.xs-menus .nav-menu > li > a
+    {
+        padding: 15px 9px;
+        text-align: center;
+    }
+}
+
+
+
+.auction-slider .slick-prev, .auction-slider  .slick-next {
+    background: transparent;
+    border: none;
+    padding: 50px 14px;
+    position: absolute;
+    font-size: 25px;
+    top: calc(50% - 75px);
+    z-index: 99;
+    color: #fb8a79;
+    cursor: pointer;
+}
+.auction-slider .slick-prev {
+    left: -40px;
+}
+.auction-slider .slick-next {
+    right: -40px;
+}
+
+.auction-slider2 .slick-prev, .auction-slider2  .slick-next {
+    border: none;
+    padding: 50px 14px;
+    color: #fb8a79;
+    position: absolute;
+    font-size: 25px;
+    top: calc(50% - 75px);
+    z-index: 99;
+    cursor: pointer;
+    background: transparent;
+}
+.auction-slider2 .slick-prev {
+    left: -40px;
+}
+.auction-slider2 .slick-next {
+    right: -40px;
+}
