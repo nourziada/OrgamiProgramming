@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\ControlPage;
 use App\WebsiteInfo;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Schema;
@@ -17,7 +18,9 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         Schema::defaultStringLength(191);
+        View::share('navPages' , ControlPage::get());
         View::share('webSettings' , WebsiteInfo::first());
+        View::share('active' , '');
     }
 
     /**

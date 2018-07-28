@@ -11,8 +11,10 @@ use App\EduVideo;
 use App\News;
 use App\Product;
 use App\Publication;
+use App\SecondBanner;
 use App\Slider;
 use App\Team;
+use App\ThirdBanner;
 use App\Tranining;
 use App\Volunteering;
 use Illuminate\Http\Request;
@@ -20,11 +22,21 @@ use App\Http\Controllers\Controller;
 
 class HomeController extends Controller
 {
+
     public function getProductDetails($id)
     {
         $active = 'products';
-        return view('web.product',compact('active'));
+        $product = Product::findOrFail($id);
+        return view('web.product',compact('active','product'));
     }
+
+    public function getProducts()
+    {
+        $active = 'products';
+        $products = Product::orderBy('created_at','desc')->paginate(12);
+        return view('web.products',compact('active','products'));
+    }
+
     public function getCommunityServicesDetails($id)
     {
         $active = 'community';
@@ -114,7 +126,9 @@ class HomeController extends Controller
         $active = 'index';
         $sliders = Slider::get();
         $news = News::orderBy('created_at','desc')->take(6)->get();
-        $banners = Banner::get();
+        $banners_right = Banner::get();
+        $banners_left = SecondBanner::get();
+        $banners_products = ThirdBanner::get();
         $articels = Articel::orderBy('created_at','desc')->take(6)->get();
         $videos = EduVideo::orderBy('created_at','desc')->take(3)->get();
 
@@ -128,7 +142,7 @@ class HomeController extends Controller
         $lastProducts2 = Product::orderBy('created_at','desc')->skip(3)->take(3)->get();
 
 
-        return view('web.index',compact('sliders','news','banners','articels','videos','priceProducts1',
-            'priceProducts2','viewsProducts1','viewsProducts2','lastProducts1','lastProducts2','active'));
+        return view('web.index',compact('sliders','news','banners_right','articels','videos','priceProducts1',
+            'priceProducts2','viewsProducts1','viewsProducts2','lastProducts1','lastProducts2','active','banners_left','banners_products'));
     }
 }

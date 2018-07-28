@@ -41,16 +41,61 @@
                         <div class="row">
                             <div class="row mb-4">
 
+
+
                                 @forelse($images as $image)
+
+                                    @if($image->video == null)
                                     <div class="col-6 col-lg-4">
 
-                                        <a class="d-block mb-4" data-fancybox="images" href="{{ Voyager::image($image->image) }}" data-width="1536" data-height="2304">
+                                        <a class="d-block mb-4" data-fancybox="images" href="{{ Voyager::image($image->image) }}" data-width="1536" data-height="2304" style="margin-bottom: 0px !important;">
                                             <img class="img-fluid" src="{{ Voyager::image($image->image) }}" style="width: 100%;height: 220px;">
                                         </a>
+
+                                        <div class="post-body" style="padding-top: 5px;">
+                                            <div class="entry-header">
+
+                                                <h6 class="entry-title xs-post-entry-title" style="color: #000;font-size: 20px;">
+                                                    {{ $image->content }}
+                                                </h6>
+                                            </div><!-- header end -->
+
+                                        </div><!-- post-body end -->
 
 
 
                                     </div>
+                                    @else
+
+                                        <div class="col-6 col-lg-4">
+
+                                            <!-- format video -->
+                                            <article class="post format-video hentry xs-blog-post-details">
+                                                <a href="{{ $image->video }}" data-fancybox="gallery">
+                                                    <div class="post-media post-image">
+                                                        <img src="{{ Voyager::image($image->image) }}" class="img-responsive" alt="" style="    height: 220px;">
+                                                        <div class="post-video">
+
+                                                            <i class="fa fa-play"></i>
+
+                                                        </div>
+                                                        <div class="xs-overlay bg-black"></div>
+                                                    </div><!-- .post-media END -->
+                                                </a>
+                                                <div class="post-body" style="padding-top: 12px;">
+                                                    <div class="entry-header">
+
+                                                    <h6 class="entry-title xs-post-entry-title" style="color: #000;font-size: 20px;">
+                                                           {{ $image->content }}
+                                                    </h6>
+                                                    </div><!-- header end -->
+
+                                                </div><!-- post-body end -->
+                                            </article><!-- .post  END -->
+                                        </div>
+
+                                    @endif
+
                                 @empty
                                 @endforelse
 

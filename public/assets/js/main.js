@@ -883,30 +883,7 @@ $(document).ready(function() {
 		}
 	});
 
-  	/*=============================================================
-			 31. input number increase
-	=========================================================================*/
 
-	var $this = $( '.xs_input_number' );
-	$this.append( '<span class="sub"><img src="assets/images/minus.png" alt="" /></span>' );
-	$this.append( '<span class="add"><img src="assets/images/plus.png" alt="" /></span>' );
-	$( '.xs_input_number' ).each( function( ) {
-		var spinner = $(this),
-		input = spinner.find( 'input[type="number"]' ),
-		add = spinner.find( '.add' ),
-		sub = spinner.find( '.sub' );
-		input.parent().on( 'click', '.sub', function( event ) {
-			event.preventDefault();
-			/* Act on the event */
-			if ( input.val() > parseInt( input.attr( 'min' ) ) )
-			input.val( function( i, oldval ) { return --oldval; } );
-		});
-		input.parent().on( 'click', '.add', function ( ) {
-			event.preventDefault( );
-			if ( input.val() < parseInt( input.attr( 'max' ) ) )
-			input.val( function( i, oldval ) { return ++oldval; } );
-		});
-	});
 
 	/*==========================================================
 				32. echo init

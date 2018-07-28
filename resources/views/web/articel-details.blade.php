@@ -55,6 +55,18 @@
                                     {!! nl2br($articel->content) !!}
                                 </p>
 
+                                @if($articel->video != null)
+                                <div class="col-md-12 col-lg-12">
+                                    <div class="xs-single-news">
+                                        <div class="entry-thumbnail">
+                                            <iframe width="350" height="450" src="{{ $articel->video }}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="height: 450px;"></iframe>
+
+                                        </div><!-- .entry-thumbnail END -->
+
+                                    </div><!-- .xs-single-news END -->
+                                </div>
+                                @endif
+
 
                                 <div class="xs-post-footer">
                                     {{--<div class="post-tags">--}}

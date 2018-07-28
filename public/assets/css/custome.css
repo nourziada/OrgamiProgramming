@@ -121,6 +121,7 @@ time, mark, audio, video {
 .custom-cart{
     width: 100%;
     padding: 15px;
+    line-height: 2;
 }
 
 
@@ -137,6 +138,9 @@ time, mark, audio, video {
     height: 50px;
     display: block;
     float: right;
+}
+.custom-cart .title-product a{
+color:#dc3545;
 }
 .custom-cart .form-control{
     width: 100px;
@@ -167,7 +171,7 @@ time, mark, audio, video {
     font-weight: bold;
 }
 
-.profile .xs-content-title{
+.xs-content-title{
 padding-bottom: 15px;
 color:#dc3545;
 }
@@ -264,21 +268,21 @@ ul.traning-list li .img-user{
 
 
 .auction-slider .slick-prev, .auction-slider  .slick-next {
-    background: transparent;
+    background: rgba(220, 53, 69, 0.67);
     border: none;
     padding: 50px 14px;
+    color: #fff;
     position: absolute;
     font-size: 25px;
     top: calc(50% - 75px);
     z-index: 99;
-    color: #fb8a79;
     cursor: pointer;
 }
 .auction-slider .slick-prev {
-    left: -40px;
+    left: 0;
 }
 .auction-slider .slick-next {
-    right: -40px;
+    right: 0;
 }
 
 .auction-slider2 .slick-prev, .auction-slider2  .slick-next {
@@ -297,4 +301,25 @@ ul.traning-list li .img-user{
 }
 .auction-slider2 .slick-next {
     right: -40px;
+}
+.form-checkout{
+    background: #f9f9f9;
+    padding: 15px 15px;
+    border-radius: 3px;
+}
+
+.custom-top-header .xs-menus .nav-menu > li > a{
+    padding: 0;
+    text-align: right;
+}
+.custom-top-header  .nav-dropdown>li {
+    float: right;
+    text-align: right;
+    padding-right: 10px;
+}
+.custom-top-header .xs-menus .nav-menu > li:last-child{
+float: right;
+}
+.xs-top-bar .xs-social-list{
+    text-align: left;
 }
